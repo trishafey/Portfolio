@@ -983,11 +983,11 @@ a {
     }
 
     .header {
-        padding: var(--spacing-md) var(--spacing-sm);
+        padding: var(--spacing-md) 12px;
     }
 
     .home-main {
-        padding: var(--spacing-xl) var(--spacing-sm);
+        padding: var(--spacing-xl) 12px;
     }
 
     .hero-title {
@@ -1122,11 +1122,11 @@ a {
 
 @media (max-width: 480px) {
     .header {
-        padding: var(--spacing-sm);
+        padding: 12px;
     }
 
     .home-main {
-        padding: var(--spacing-xl) var(--spacing-sm);
+        padding: var(--spacing-xl) 12px;
     }
 
     .nav-link {
