@@ -983,11 +983,11 @@ a {
     }
 
     .header {
-        padding: var(--spacing-md) 16px;
+        padding: var(--spacing-md) 32px;
     }
 
     .home-main {
-        padding: var(--spacing-xl) 16px;
+        padding: var(--spacing-xl) 32px;
     }
 
     .hero {
@@ -1126,11 +1126,11 @@ a {
 
 @media (max-width: 480px) {
     .header {
-        padding: 16px;
+        padding: 32px;
     }
 
     .home-main {
-        padding: var(--spacing-xl) 16px;
+        padding: var(--spacing-xl) 32px;
     }
 
     .hero {
