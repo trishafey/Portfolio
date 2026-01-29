@@ -1160,3 +1160,128 @@ a {
         margin-top: 30px;
     }
 }
+
+/* ============================================ */
+/* BGRS Case Study Theme (Teal) */
+/* ============================================ */
+
+.bgrs-theme .case-details-section {
+    background: #2A7B7B;
+}
+
+.bgrs-theme .detail-label {
+    border-bottom-color: rgba(42, 100, 100, 0.8);
+}
+
+.bgrs-theme .case-hero-parallax {
+    background: #D5EEED;
+}
+
+.bgrs-theme .parallax-image {
+    background-color: #D5EEED;
+}
+
+.bgrs-theme .photo-grid-section,
+.bgrs-theme .progression-slider-section,
+.bgrs-theme .feature-section {
+    background: #E8F4F4;
+}
+
+.bgrs-theme .feature-callout {
+    border-left-color: #2A7B7B;
+}
+
+.bgrs-theme .highlight-metric {
+    border-left-color: #2A7B7B;
+}
+
+.bgrs-theme .next-steps-list li::before {
+    color: #2A7B7B;
+}
+
+.bgrs-theme .progression-dot:hover {
+    background: #2A7B7B;
+}
+
+/* Video Section */
+.video-section {
+    background: #E8F4F4;
+    padding: 60px 30px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.video-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Screenshot Grid (for BGRS 15-image grid) */
+.screenshot-grid-section {
+    padding: 60px 30px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.bgrs-theme .screenshot-grid-section {
+    background: #E8F4F4;
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.screenshot-grid-item {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.screenshot-grid-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.screenshot-grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .screenshot-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .screenshot-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .video-section {
+        padding: 40px 20px;
+    }
+}
