@@ -983,11 +983,15 @@ a {
     }
 
     .header {
-        padding: var(--spacing-md);
+        padding: var(--spacing-md) 32px;
     }
 
     .home-main {
-        padding: var(--spacing-xl) var(--spacing-md);
+        padding: var(--spacing-xl) 32px;
+    }
+
+    .hero {
+        max-width: 100%;
     }
 
     .hero-title {
@@ -1122,7 +1126,15 @@ a {
 
 @media (max-width: 480px) {
     .header {
-        padding: var(--spacing-sm) var(--spacing-md);
+        padding: 32px;
+    }
+
+    .home-main {
+        padding: var(--spacing-xl) 32px;
+    }
+
+    .hero {
+        max-width: 100%;
     }
 
     .nav-link {
@@ -1146,5 +1158,578 @@ a {
 
     .cta-link {
         margin-top: 30px;
+    }
+}
+
+/* ============================================ */
+/* BGRS Case Study Theme (Teal) */
+/* ============================================ */
+
+.bgrs-theme .case-details-section {
+    background: #2A7B7B;
+}
+
+.bgrs-theme .detail-label {
+    border-bottom-color: rgba(42, 100, 100, 0.8);
+}
+
+.bgrs-theme .case-hero-parallax {
+    background: #D5EEED;
+}
+
+.bgrs-theme .parallax-image {
+    background-color: #D5EEED;
+}
+
+.bgrs-theme .photo-grid-section,
+.bgrs-theme .progression-slider-section,
+.bgrs-theme .feature-section {
+    background: #E8F4F4;
+}
+
+.bgrs-theme .feature-callout {
+    border-left-color: #2A7B7B;
+}
+
+.bgrs-theme .highlight-metric {
+    border-left-color: #2A7B7B;
+}
+
+.bgrs-theme .next-steps-list li::before {
+    color: #2A7B7B;
+}
+
+.bgrs-theme .progression-dot:hover {
+    background: #2A7B7B;
+}
+
+/* Video Section */
+.video-section {
+    background: #E8F4F4;
+    padding: 60px 30px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.video-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Screenshot Grid (for BGRS 15-image grid) */
+.screenshot-grid-section {
+    padding: 60px 30px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.bgrs-theme .screenshot-grid-section {
+    background: #E8F4F4;
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.screenshot-grid-item {
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.screenshot-grid-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.screenshot-grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .screenshot-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .screenshot-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .video-section {
+        padding: 40px 20px;
+    }
+}
+
+/* ============================================ */
+/* Vertical Advisor Case Study Theme (Orange) */
+/* ============================================ */
+
+.va-theme .case-details-section {
+    background: #F5A623;
+}
+
+.va-theme .detail-label {
+    border-bottom-color: rgba(200, 130, 20, 0.6);
+}
+
+.va-theme .case-hero-parallax {
+    background: #FFF8F0;
+}
+
+.va-theme .parallax-image {
+    background-color: #FFF8F0;
+}
+
+.va-theme .photo-grid-section,
+.va-theme .progression-slider-section,
+.va-theme .feature-section {
+    background: #F9F9F9;
+}
+
+.va-theme .feature-callout {
+    border-left-color: #F5A623;
+}
+
+.va-theme .highlight-metric {
+    border-left-color: #F5A623;
+}
+
+.va-theme .next-steps-list li::before {
+    color: #F5A623;
+}
+
+.va-theme .progression-dot:hover {
+    background: #F5A623;
+}
+
+.va-theme .video-section,
+.va-theme .screenshot-grid-section {
+    background: #F9F9F9;
+}
+
+/* Stat callout styling */
+.stat-callout {
+    margin-top: var(--spacing-lg);
+    padding-left: var(--spacing-md);
+    border-left: 3px solid #F5A623;
+    font-style: italic;
+}
+
+.stat-callout .stat-number {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.stat-callout .stat-source {
+    display: block;
+    margin-top: var(--spacing-xs);
+    font-size: 0.875rem;
+    color: var(--text-light);
+}
+
+.va-theme .stat-callout {
+    border-left-color: #F5A623;
+}
+
+/* Full width dark image section (for food/restaurant imagery) */
+.full-width-dark-section {
+    position: relative;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 80px 30px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.full-width-dark-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.full-width-dark-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.full-width-dark-text {
+    color: white;
+}
+
+.full-width-dark-text .section-overline {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-sm);
+}
+
+.full-width-dark-text h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
+}
+
+.full-width-dark-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.full-width-dark-text a {
+    color: #F5A623;
+}
+
+.full-width-dark-image {
+    display: flex;
+    justify-content: center;
+}
+
+.full-width-dark-image img {
+    max-width: 300px;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .full-width-dark-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .full-width-dark-text h2 {
+        font-size: 1.75rem;
+    }
+
+    .full-width-dark-section {
+        padding: 60px 20px;
+    }
+}
+
+/* ============================================ */
+/* PromoPages Case Study Theme (Blue) */
+/* ============================================ */
+
+.pp-theme .case-details-section {
+    background: #4A90D9;
+}
+
+.pp-theme .detail-label {
+    border-bottom-color: rgba(74, 120, 180, 0.6);
+}
+
+.pp-theme .case-hero-parallax {
+    background: #E8F4FC;
+}
+
+.pp-theme .parallax-image {
+    background-color: #E8F4FC;
+}
+
+.pp-theme .photo-grid-section,
+.pp-theme .progression-slider-section,
+.pp-theme .feature-section {
+    background: #E8F4FC;
+}
+
+.pp-theme .feature-callout {
+    border-left-color: #4A90D9;
+}
+
+.pp-theme .highlight-metric {
+    border-left-color: #4A90D9;
+}
+
+.pp-theme .next-steps-list li::before {
+    color: #4A90D9;
+}
+
+.pp-theme .progression-dot:hover {
+    background: #4A90D9;
+}
+
+.pp-theme .video-section,
+.pp-theme .screenshot-grid-section {
+    background: #E8F4FC;
+}
+
+.pp-theme .stat-callout {
+    border-left-color: #4A90D9;
+}
+
+/* Three column image grid for process images */
+.three-col-image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 60px 30px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    background: #f5f5f5;
+}
+
+.three-col-image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .three-col-image-grid {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+}
+
+/* Two column before/after image section */
+.two-col-image-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
+
+.two-col-image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .two-col-image-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================ */
+/* Nova AI Case Study Theme (Rocket Red) */
+/* ============================================ */
+
+.nova-theme .case-details-section {
+    background: #C41230;
+}
+
+.nova-theme .detail-label {
+    border-bottom-color: rgba(160, 14, 38, 0.6);
+}
+
+.nova-theme .case-hero-parallax {
+    background: #FDF2F4;
+}
+
+.nova-theme .parallax-image {
+    background-color: #FDF2F4;
+}
+
+.nova-theme .photo-grid-section,
+.nova-theme .progression-slider-section,
+.nova-theme .feature-section {
+    background: #FDF2F4;
+}
+
+.nova-theme .feature-callout {
+    border-left-color: #C41230;
+}
+
+.nova-theme .highlight-metric {
+    border-left-color: #C41230;
+}
+
+.nova-theme .next-steps-list li::before {
+    color: #C41230;
+}
+
+.nova-theme .progression-dot:hover {
+    background: #C41230;
+}
+
+.nova-theme .video-section,
+.nova-theme .screenshot-grid-section {
+    background: #FDF2F4;
+}
+
+.nova-theme .stat-callout {
+    border-left-color: #C41230;
+}
+
+.nova-theme a:not(.nav-link):not(.logo):not(.more-work-card):not(.portfolio-card) {
+    color: #C41230;
+}
+
+/* Design Question Callout */
+.design-question-callout {
+    background: #FDF2F4;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+    border-left: 4px solid #C41230;
+    border-radius: var(--border-radius);
+}
+
+.design-question-callout p {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    margin-bottom: var(--spacing-sm);
+}
+
+.design-question-callout p:last-child {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--text-color);
+    margin-bottom: 0;
+}
+
+/* Workflow Steps */
+.workflow-steps {
+    margin: var(--spacing-lg) 0;
+}
+
+.workflow-step {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.workflow-step:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.workflow-step-number {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    background: #C41230;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.workflow-step-content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.workflow-step-content p {
+    font-size: 0.9375rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.workflow-step-content ul {
+    margin: var(--spacing-xs) 0 0 var(--spacing-md);
+    padding: 0;
+    list-style: disc;
+}
+
+.workflow-step-content ul li {
+    font-size: 0.9375rem;
+    color: var(--text-light);
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Panel Description */
+.panel-description {
+    margin: var(--spacing-lg) 0;
+}
+
+.panel-item {
+    margin-bottom: var(--spacing-lg);
+    padding-left: var(--spacing-md);
+    border-left: 3px solid #C41230;
+}
+
+.panel-item h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.panel-item p {
+    font-size: 0.9375rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* AI Boundaries */
+.ai-boundaries {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+}
+
+.ai-boundary-column h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 2px solid #C41230;
+}
+
+.ai-boundary-column ul {
+    margin: 0;
+    padding: 0 0 0 var(--spacing-md);
+    list-style: disc;
+}
+
+.ai-boundary-column ul li {
+    font-size: 0.9375rem;
+    color: var(--text-light);
+    margin-bottom: var(--spacing-xs);
+}
+
+@media (max-width: 768px) {
+    .ai-boundaries {
+        grid-template-columns: 1fr;
     }
 }
