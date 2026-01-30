@@ -1542,3 +1542,194 @@ a {
         grid-template-columns: 1fr;
     }
 }
+
+/* ============================================ */
+/* Nova AI Case Study Theme (Rocket Red) */
+/* ============================================ */
+
+.nova-theme .case-details-section {
+    background: #C41230;
+}
+
+.nova-theme .detail-label {
+    border-bottom-color: rgba(160, 14, 38, 0.6);
+}
+
+.nova-theme .case-hero-parallax {
+    background: #FDF2F4;
+}
+
+.nova-theme .parallax-image {
+    background-color: #FDF2F4;
+}
+
+.nova-theme .photo-grid-section,
+.nova-theme .progression-slider-section,
+.nova-theme .feature-section {
+    background: #FDF2F4;
+}
+
+.nova-theme .feature-callout {
+    border-left-color: #C41230;
+}
+
+.nova-theme .highlight-metric {
+    border-left-color: #C41230;
+}
+
+.nova-theme .next-steps-list li::before {
+    color: #C41230;
+}
+
+.nova-theme .progression-dot:hover {
+    background: #C41230;
+}
+
+.nova-theme .video-section,
+.nova-theme .screenshot-grid-section {
+    background: #FDF2F4;
+}
+
+.nova-theme .stat-callout {
+    border-left-color: #C41230;
+}
+
+.nova-theme a:not(.nav-link):not(.logo):not(.more-work-card):not(.portfolio-card) {
+    color: #C41230;
+}
+
+/* Design Question Callout */
+.design-question-callout {
+    background: #FDF2F4;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+    border-left: 4px solid #C41230;
+    border-radius: var(--border-radius);
+}
+
+.design-question-callout p {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    margin-bottom: var(--spacing-sm);
+}
+
+.design-question-callout p:last-child {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--text-color);
+    margin-bottom: 0;
+}
+
+/* Workflow Steps */
+.workflow-steps {
+    margin: var(--spacing-lg) 0;
+}
+
+.workflow-step {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.workflow-step:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.workflow-step-number {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    background: #C41230;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.workflow-step-content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.workflow-step-content p {
+    font-size: 0.9375rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.workflow-step-content ul {
+    margin: var(--spacing-xs) 0 0 var(--spacing-md);
+    padding: 0;
+    list-style: disc;
+}
+
+.workflow-step-content ul li {
+    font-size: 0.9375rem;
+    color: var(--text-light);
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Panel Description */
+.panel-description {
+    margin: var(--spacing-lg) 0;
+}
+
+.panel-item {
+    margin-bottom: var(--spacing-lg);
+    padding-left: var(--spacing-md);
+    border-left: 3px solid #C41230;
+}
+
+.panel-item h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.panel-item p {
+    font-size: 0.9375rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* AI Boundaries */
+.ai-boundaries {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+}
+
+.ai-boundary-column h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 2px solid #C41230;
+}
+
+.ai-boundary-column ul {
+    margin: 0;
+    padding: 0 0 0 var(--spacing-md);
+    list-style: disc;
+}
+
+.ai-boundary-column ul li {
+    font-size: 0.9375rem;
+    color: var(--text-light);
+    margin-bottom: var(--spacing-xs);
+}
+
+@media (max-width: 768px) {
+    .ai-boundaries {
+        grid-template-columns: 1fr;
+    }
+}
